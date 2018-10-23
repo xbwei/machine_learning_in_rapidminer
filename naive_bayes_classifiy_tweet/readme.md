@@ -8,5 +8,5 @@
 2. [Process the Data](https://github.com/xbwei/machine_learning_in_rapidminer/blob/master/naive_bayes_classifiy_tweet/process_data.xml)
      * <img src="process_data.PNG" width="500"> 
      
-3. [Apply the Model](https://github.com/xbwei/machine_learning_in_rapidminer/blob/master/naive_bayes_classifiy_tweet/apply_model.xml)
+3. [Train and Apply the Model](https://github.com/xbwei/machine_learning_in_rapidminer/blob/master/naive_bayes_classifiy_tweet/train_and_apply_model.xml.xml)
      * <img src="apply_data.PNG" width="500"> 
