@@ -1,7 +1,7 @@
 
 # Use Neural Networks to Classify House Types
 
-## The [Process](https://github.com/xbwei/machine_learning_in_rapidminer/blob/master/neural_networks/mlp.xml)
+* The [Process](https://github.com/xbwei/machine_learning_in_rapidminer/blob/master/neural_networks/mlp.xml)
 
 * Import the Data 
 <img src="mlp_1.PNG" width="500">
