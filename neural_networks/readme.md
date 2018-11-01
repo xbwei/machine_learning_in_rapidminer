@@ -7,5 +7,5 @@
 <img src="mlp_1.PNG" width="700">
 
 * Train and Apply the Model
-<img src="mlp_2.PNG" width="500">
+<img src="mlp_2.PNG" width="700">
 
