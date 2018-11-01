@@ -1,5 +1,5 @@
 # Machine Learning in RapidMiner
-Demo of using [RapidMiner](https://rapidminer.com/) in machine learning
+Introduce basic machine learning models in [RapidMiner](https://rapidminer.com/).
 
 1.  [Neural Networks](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/neural_networks)
     * [video demo]()
