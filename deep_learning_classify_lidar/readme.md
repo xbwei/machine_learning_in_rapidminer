@@ -9,3 +9,9 @@
 
 3. Import the predicted points into ArcScene and display the result.
     * <img src="predicted_points.JPG" width="500">
+    
+4. Things you can do to improve your outcome:
+    * Manually label more points;
+    * Label points with more classes, e.g., chairs, desks, people, floor, etc.;
+    * Use more complicated networks in the Deep Learning model;
+    * Use LiDAR points with high point densities.
