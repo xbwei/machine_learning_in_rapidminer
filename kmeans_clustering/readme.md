@@ -5,5 +5,5 @@ Use the [K-Means Clustering](https://github.com/xbwei/machine_learning_in_rapidm
 1. Import the data:
 <img src="kmeans_1.PNG" width="500">
 
-2. Use a loop operator to cluster the data with different k values:
+2. Within the loop operator, use K-Means to cluster the data with different k values:
 <img src="kmeans_2.PNG" width="500">
