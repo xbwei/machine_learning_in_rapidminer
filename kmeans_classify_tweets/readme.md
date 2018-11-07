@@ -8,5 +8,5 @@ Use the [K-Means Clustering](https://github.com/xbwei/machine_learning_in_rapidm
     * <img src="k_means_classify_tweets_2.JPG" width="500">
     
 3. The Wordcloud:
-    * <img src="wordcloud.png" width="500">
+    * <img src="wordcloud.png" width="800">
           
