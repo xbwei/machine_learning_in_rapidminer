@@ -7,6 +7,6 @@ Use the [K-Means Clustering](https://github.com/xbwei/machine_learning_in_rapidm
 2. The Process Document Process:
     * <img src="k_means_classify_tweets_2.JPG" width="500">
     
-3. The Output:
-
+3. The Wordcloud:
+    * <img src="wordcloud.PNG" width="500">
           
