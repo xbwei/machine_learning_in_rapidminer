@@ -1,1 +1,1 @@
-# Use K-Means Clustering to Classify Twitter Data
+# Use K-Means Clustering to Classify Tweets
