@@ -4,7 +4,7 @@ Use the [K-Means Clustering](https://github.com/xbwei/machine_learning_in_rapidm
 1. The Data Collection and K-Means Clustering:
     * <img src="k_means_classify_tweets_1.JPG" width="500">
 
-2. The Process Document Process:
+2. The Document Process:
     * <img src="k_means_classify_tweets_2.JPG" width="500">
     
 3. The Wordcloud:
