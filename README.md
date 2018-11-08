@@ -10,7 +10,7 @@ Introduce basic machine learning models in [RapidMiner](https://rapidminer.com/)
     * [video demo](https://www.youtube.com/watch?v=AY_YBZvp1Qc)
     
 2.  [Use K-Means Clustering to Classify Tweets](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/kmeans_classify_tweets)
-    * [video demo]()    
+    * [video demo](https://www.youtube.com/watch?v=NOMS0wgG-lI)    
     
 3.  [Use Deep Learning to Classify LiDAR Points](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/deep_learning_classify_lidar)
     * [video demo](https://www.youtube.com/watch?v=3QRsKoSlEIY)    
