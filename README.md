@@ -19,7 +19,7 @@ Introduce basic machine learning models in [RapidMiner](https://rapidminer.com/)
     * [video demo](https://www.youtube.com/watch?v=viU93euNI_8&index=9&list=PLHutrxqbP1BzyutPkuzTXPwAroHS9j8Vd)
 9.  [Neural Networks](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/neural_networks)
     * [video demo](https://www.youtube.com/watch?v=U82eGfKUWa0)
-10.  [K-Means Clustering](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/kmeans_clustering)
+10.  [K-Means Clustering](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/kmeans_clustering) 
     * [video demo](https://www.youtube.com/watch?v=G0AM6-KtauY)
 ## Simple Application
 1.  [Use Naive Bayes to Classify Tweets](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/naive_bayes_classifiy_tweet)
