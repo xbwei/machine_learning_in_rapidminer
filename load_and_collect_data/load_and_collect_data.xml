@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="9.0.003">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="9.0.003" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="false" class="read_excel" compatibility="9.0.003" expanded="true" height="68" name="Read Excel" width="90" x="45" y="34">
+        <parameter key="excel_file" value="C:\Users\weixx\Downloads\Diamonds.xls"/>
+        <parameter key="sheet_selection" value="sheet number"/>
+        <parameter key="sheet_number" value="1"/>
+        <parameter key="imported_cell_range" value="A1"/>
+        <parameter key="encoding" value="SYSTEM"/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="date_format" value="MMM d, yyyy h:mm:ss a z"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="IDNO.true.integer.attribute"/>
+          <parameter key="1" value="WEIGHT.true.real.attribute"/>
+          <parameter key="2" value="COLOR.true.polynominal.attribute"/>
+          <parameter key="3" value="CLARITY.true.polynominal.attribute"/>
+          <parameter key="4" value="RATER.true.polynominal.attribute"/>
+          <parameter key="5" value="PRICE.true.integer.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+        <parameter key="datamanagement" value="double_array"/>
+        <parameter key="data_management" value="auto"/>
+      </operator>
+      <operator activated="false" class="store" compatibility="9.0.003" expanded="true" height="68" name="Store" width="90" x="313" y="34">
+        <parameter key="repository_entry" value="//IA480/lab1/diamond"/>
+      </operator>
+      <operator activated="false" class="retrieve" compatibility="9.0.003" expanded="true" height="68" name="Retrieve diamond" width="90" x="45" y="136">
+        <parameter key="repository_entry" value="//IA480/lab1/diamond"/>
+      </operator>
+      <operator activated="false" class="social_media:search_twitter" compatibility="9.0.000" expanded="true" height="68" name="Search Twitter" width="90" x="112" y="238">
+        <parameter key="connection" value="NewConnection"/>
+        <parameter key="query" value="jmu"/>
+        <parameter key="result_type" value="recent or popular"/>
+        <parameter key="limit" value="100"/>
+        <parameter key="filter_by_geo_location" value="false"/>
+        <parameter key="radius_unit" value="miles"/>
+      </operator>
+      <operator activated="false" class="store" compatibility="9.0.003" expanded="true" height="68" name="Store (2)" width="90" x="313" y="238">
+        <parameter key="repository_entry" value="//IA480/lab1/twitter_data"/>
+      </operator>
+      <operator activated="false" class="retrieve" compatibility="9.0.003" expanded="true" height="68" name="Retrieve twitter_data" width="90" x="45" y="289">
+        <parameter key="repository_entry" value="//IA480/lab1/twitter_data"/>
+      </operator>
+      <operator activated="false" class="web:get_webpage" compatibility="7.3.000" expanded="true" height="68" name="Get Page" width="90" x="112" y="340">
+        <parameter key="url" value="https://www.cnn.com/politics/live-news/primary-election-arizona-florida-2018/h_6c3c614f06513e950df1a2b214052755"/>
+        <parameter key="random_user_agent" value="false"/>
+        <parameter key="connection_timeout" value="10000"/>
+        <parameter key="read_timeout" value="10000"/>
+        <parameter key="follow_redirects" value="true"/>
+        <parameter key="accept_cookies" value="none"/>
+        <parameter key="cookie_scope" value="global"/>
+        <parameter key="request_method" value="GET"/>
+        <list key="query_parameters"/>
+        <list key="request_properties"/>
+        <parameter key="override_encoding" value="false"/>
+        <parameter key="encoding" value="SYSTEM"/>
+      </operator>
+      <operator activated="false" class="web:extract_html_text_content" compatibility="7.3.000" expanded="true" height="68" name="Extract Content" width="90" x="313" y="340">
+        <parameter key="extract_content" value="true"/>
+        <parameter key="minimum_text_block_length" value="5"/>
+        <parameter key="override_content_type_information" value="true"/>
+        <parameter key="neglegt_span_tags" value="true"/>
+        <parameter key="neglect_p_tags" value="true"/>
+        <parameter key="neglect_b_tags" value="true"/>
+        <parameter key="neglect_i_tags" value="true"/>
+        <parameter key="neglect_br_tags" value="true"/>
+        <parameter key="ignore_non_html_tags" value="true"/>
+      </operator>
+      <operator activated="false" class="store" compatibility="9.0.003" expanded="true" height="68" name="Store (3)" width="90" x="514" y="289">
+        <parameter key="repository_entry" value="cnn_news"/>
+      </operator>
+      <operator activated="true" class="retrieve" compatibility="9.0.003" expanded="true" height="68" name="Retrieve cnn_news" width="90" x="380" y="136">
+        <parameter key="repository_entry" value="cnn_news"/>
+      </operator>
+      <connect from_op="Read Excel" from_port="output" to_op="Store" to_port="input"/>
+      <connect from_op="Search Twitter" from_port="output" to_op="Store (2)" to_port="input"/>
+      <connect from_op="Get Page" from_port="output" to_op="Extract Content" to_port="document"/>
+      <connect from_op="Extract Content" from_port="document" to_op="Store (3)" to_port="input"/>
+      <connect from_op="Retrieve cnn_news" from_port="output" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
