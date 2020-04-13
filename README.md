@@ -23,6 +23,7 @@ Introduce basic machine learning models in [RapidMiner](https://rapidminer.com/)
     * [video demo](https://www.youtube.com/watch?v=G0AM6-KtauY)
 11. [Create an App on RapidMiner Server](https://www.youtube.com/watch?v=D3-ejMj86AQ&feature=youtu.be)
     * [demo code and data](https://github.com/xbwei/machine_learning_in_rapidminer/tree/master/naive_bayes_classifiy_tweet)
+12. [Use Auto Model in RapidMiner](https://youtu.be/COR7bgnQfzc)
     
     
 ## Simple Application
